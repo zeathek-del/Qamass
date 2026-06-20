@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home Page</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    /* ===== Navbar ===== */
+
+    nav{
+      background:#0f172a;
+      padding:15px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:#38bdf8;
+      font-size:28px;
+      font-weight:bold;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:20px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#38bdf8;
+    }
+
+    /* ===== Hero Section ===== */
+
+    .hero{
+      height:90vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+      url("IMG_5873.JPG");
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h1{
+      font-size:55px;
+      margin-bottom:20px;
+    }
+
+    .hero-content span{
+      color:#38bdf8;
+    }
+
+    .hero-content p{
+      font-size:18px;
+      line-height:1.7;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 30px;
+      background:#38bdf8;
+      color:black;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    /* ===== Section ===== */
+
+    .about{
+      padding:70px 8%;
+      text-align:center;
+      background:white;
+    }
+
+    .about h2{
+      font-size:40px;
+      margin-bottom:20px;
+      color:#0f172a;
+    }
+
+    .about p{
+      color:#555;
+      line-height:1.8;
+      max-width:700px;
+      margin:auto;
+    }
+
+    /* ===== Cards ===== */
+
+    .services{
+      padding:70px 8%;
+      text-align:center;
+    }
+
+    .services h2{
+      font-size:40px;
+      margin-bottom:40px;
+      color:#0f172a;
+    }
+
+    .card-box{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:white;
+      width:280px;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card h3{
+      margin:15px 0;
+      color:#0f172a;
+    }
+
+    .card p{
+      color:#666;
+      line-height:1.6;
+    }
+
+    /* ===== Footer ===== */
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    /* ===== Responsive ===== */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .hero-content h1{
+        font-size:38px;
+      }
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <section class="hero">
+
+    <div class="hero-content">
+      <h6 <img src="IMG_5873.JPG"> </h6>
+
+      <h1>
+        Sa Thik To <span>ក្មេងទំនើង</span>
+      </h1>
+
+    </div>
+
+  </section>
+  <section class="services">
+
+    <h2>ក្មេងទំនើង</h2>
+
+    <div class="card-box">
+
+      <div class="card">
+
+        <h3>🌐 Web Design</h3>
+                <div>
+                    <strong style="display:block; color:#fff;">Web Development</strong>     
+                    <a href="homephek.html">homephek.html</a> 
+                </div>
+      </div>
+
+      <div class="card">
+
+        <h3>📱 Responsive</h3>
+
+        <p>
+          ក្មេងទំនើង
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>⚡ Fast Speed</h3>
+
+        <p>
+          ក្មេងទំនើង
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===== Footer ===== -->
+
+  <footer>
+
+    © 2026 ZeaWeb | All Rights Reserved
+
+  </footer>
+
+</body>
+</html>
